@@ -2,7 +2,7 @@
 <html class="no-js" lang="{{ htmllang() }}">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="statics/images/icons/unico.png" type="image/x-icon"/>
+    <link rel="icon" href="statics/img/flavicon_3.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iniciando con Git</title>
     <link rel="stylesheet" href="statics/css/foundation.css">
@@ -11,103 +11,137 @@
     <link rel="stylesheet" type="text/css" href="statics/css/fonts/font-awesome.min.css" /><!--Estilo Fuentes icons-->
 </head>
 <body>
-    <div class="row">
-        <div class="small-12 columns text-center block_uno">
-            <img src="statics/img/git.png"><br/>
-            <span id="titul_p">Iniciando con <b>Git</b></span><br/>
-            <span id="subt_p">Guia rapida para principiantes</span>
-        </div>
-    </div>
-    <!-----PASO 1------>
-    <div class="row block_dos">
-        <div class="small-12 columns">
-            <div class="small-12 columns">
-                <p class="questions"><b>1. </b>Como comenzar?</p>
-            </div>
-            <div class="small-11 columns">
-                <ul>
-                    <li>
-                        <span class="span_descrip">Debemos crear nuestro repositorio git en nuestra cuenta Github</span>
-                    </li>
-                    <li>
-                         <span class="span_descrip">Simplemente debemos indicar el nombre y el tipo de acceso <b  class="clave_text">(Publico/privado)</b></span>
-                    </li>
-                    <li>
-                        <span class="span_descrip">Seguidamente nos mostrara una guia
-                        con las <b class="clave_text">4</b> opciones principales para iniciar nuestro repositorio, como somos principiantes, elegimos la opción que nos indica: "Crear repositorio nuevo en la linea de comandos" </span>
-                    </li>
-                </ul>
+    <div id="cuerpo_git">
+        <div class="row">
+            <div class="small-12 columns text-center block_uno">
+                <img src="statics/img/git_soy.png"><br/>
+                <span id="titul_p">Iniciando con <b>Git</b></span><br/>
+                <span id="subt_p">Guía rápida para principiantes</span>
             </div>
         </div>
-    </div>
-    <!---PASO 2--->
-    <div class="row block_dos">
-        <div class="small-12 columns">
-            <div class="small-12 columns">
-                <p class="questions"><b>2. </b>Como crear o iniciar nuestro primer repositorio con Git?</p>
-            </div>
-            <div class="small-11 columns">
-                <span class="span_descrip">Debemos ubicarnos en la carpeta del proyecto donde iniciaremos nuestro repositorio Git</span>
-                    <pre>cd ubicacion_del_directorio/</pre>
-                <span class="span_descrip">Ejecuta el siguiente comando para comenzar</span>
-                    <pre>git init <span class="pre_descrip"> // Repositorio Git vario, inicializado en /.git</span></pre>
-                <span class="span_descrip">Ahora ejecutaremos el comando</span>
-                    <pre>git status <span class="pre_descrip">//Te permitira visualizar la lista de archivos actuales, archivos por agregar a git, cambios..</span></pre>
-            </div>
-        </div>
-    </div>
-    <!---PASO 3--->
-    <div class="row block_dos">
-        <div class="small-12 columns">
-            <div class="small-12 columns">
-                <p class="questions"><b>3. </b>Como agregar los archivos y directorios de nuestros proyecto al repositorio Git?</p>
-            </div>
-            <div class="small-11 columns">
-                <span class="span_descrip">Ejecuta el comando </span>
-                <pre>git add *   <span class="pre_descrip">//dicho comando permitira agregar los archivos incluidos dentro de nuestro proyecto</span></pre>
-               <br/>
-                <span class="span_descrip">Luego ejecuta </span><pre>git status <span class="pre_descrip">//Te permitira visualizar el estado actual de tu proyecto una vez ejecutado el comando anterior</span></pre>
-                 </div>
-        </div>
-    </div>
-    <!---PASO 4--->
-    <div class="row block_dos">
-        <div class="small-12 columns">
-            <div class="small-12 columns">
-                <p class="questions"><b>4. </b>Crear nuestro primer commit?</p>
-            </div>
-            <div class="small-11 columns">
-                <span class="span_descrip">Ejecuta el comando </span>
-                <pre>git commit -m "Mensaje que describa los cambios"   <span class="pre_descrip">//En git todos los cambios deben ser comiteados antes de ser almacenados en nuestro repositorio</span></pre>
-                <br/>
-                <span class="span_descrip">Ahora bien, para observar la lista de los commit y conocer los detalles de cada uno, debemos ejecutar el comando </span><pre>git log </pre>
+        <!-----PASO 1------>
+        <div class="row">
+            <div class="small-12 columns block_dos">
+                <div class="small-12 columns">
+                    <p class="questions"><b>1. </b>Como comenzar?</p>
+                </div>
+                <div class="small-11 columns">
+                    <ul>
+                        <li>
+                            <span class="span_descrip">Debemos crear nuestro repositorio remoto git a través de nuestra cuenta Github</span>
+                        </li>
+                        <li>
+                             <span class="span_descrip">Para crearlo simplemente debes indicar el nombre y el tipo de acceso <b  class="clave_text">(Publico/privado)</b></span>
+                        </li>
+                        <li>
+                            <span class="span_descrip">Seguidamente nos mostrara una guía
+                            con las <b class="clave_text">4</b> opciones principales para iniciar nuestro repositorio, como somos principiantes, elegimos la opción que nos indica: <b  class="clave_text">"Crear repositorio nuevo en la linea de comandos"</b> </span>
+                        </li>
+                        <li>
+                            <span class="span_descrip">Luego, nos ubicamos en la terminal de comandos provista en nuestro entorno de desarrollo o en la consola de comandos propia de nuestro sistema operativo Linux</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!---PASO 5--->
-    <div class="row block_dos">
-        <div class="small-12 columns">
-            <div class="small-12 columns">
-                <p class="questions"><b>5. </b>Como enviar nuestro repositorio local al servidor Github?</p>
-            </div>
-            <div class="small-11 columns">
-                <span class="span_descrip">Debemos añadir nuestro repositorio remoto, ejecutando lo siguiente: </span>
-                <pre>git remote add origin https://github.com/thekarito/git_kari.git  <span class="pre_descrip">//Recuerde ubicarse en la linea <b> git remote add origin https: ....</b>, proporcionada por la guia de configuración de su repositorio en Github</span></pre>
+        <!---PASO 2--->
+        <div class="row">
+            <div class="small-12 columns block_dos">
+                <div class="small-12 columns">
+                    <p class="questions"><b>2. </b>Como crear o iniciar nuestro primer repositorio local con Git?</p>
+                </div>
+                <div class="small-11 columns">
+                    <span class="span_descrip">Debemos ubicarnos en la carpeta del proyecto donde iniciaremos nuestro repositorio Git</span>
+                        <pre>cd ruta/directorio </pre>
+                    <span class="span_descrip">Ejecuta el siguiente comando para comenzar</span>
+                        <pre>git init <span class="pre_descrip"> // Repositorio Git vació, inicializado en /.git</span></pre>
+                    <span class="span_descrip">Ahora ejecuta el comando</span>
+                        <pre>git status <span class="pre_descrip">//Te permitirá visualizar la lista de archivos actuales, archivos por agregar a git, cambios..</span></pre>
+                </div>
             </div>
         </div>
-    </div>
-    <!---PASO 6--->
-    <div class="row block_dos">
-        <div class="small-12 columns">
-            <div class="small-12 columns">
-                <p class="questions"><b>6. </b>Finalmente, como empujar o subir nuestros cambios locales a nuestro repositorio remoto Github?</p>
+        <!---PASO 3--->
+        <div class="row">
+            <div class="small-12 columns block_dos">
+                <div class="small-12 columns">
+                    <p class="questions"><b>3. </b>Como agregar los archivos y directorios de nuestros proyecto al repositorio local Git?</p>
+                </div>
+                <div class="small-11 columns">
+                    <span class="span_descrip">Ejecuta el comando </span>
+                    <pre>git add *   <span class="pre_descrip">//dicho comando permitira agregar los archivos incluidos dentro de nuestro proyecto</span></pre>
+                   <br/>
+                    <span class="span_descrip">Luego ejecuta </span><pre>git status <span class="pre_descrip">//Te permitira visualizar el estado actual de tu proyecto una vez ejecutado el comando anterior</span></pre>
+                     </div>
             </div>
-            <div class="small-11 columns">
-                <span class="span_descrip">Debemos añadir nuestro repositorio remoto, ejecutando lo siguiente: </span>
-                <pre>git push -u origin master  <span class="pre_descrip">//Tengamos en cuenta que nuestro remoto es <b>origin</b> y el nombre de nuestra rama local predeterminada es <b>master</b></span></pre><br/>
-                <span class="span_descrip">No olvide indicar el usuario y contraseña de su cuenta de Github, para que la operación sea exitosa</span>
+        </div>
+        <!---PASO 4--->
+        <div class="row">
+            <div class="small-12 columns block_dos">
+                <div class="small-12 columns">
+                    <p class="questions"><b>4. </b>Crear nuestro primer commit?</p>
+                </div>
+                <div class="small-11 columns">
+                    <span class="span_descrip">Ejecuta el comando </span>
+                    <pre>git commit -m "Mensaje que describa los cambios"   <span class="pre_descrip">//En git todos los cambios deben ser comiteados antes de ser almacenados en nuestro repositorio</span></pre>
+                    <br/>
+                    <span class="span_descrip">Ahora bien, para observar la lista de los commit y conocer los detalles de cada uno, ejecuta el comando </span><pre>git log </pre>
+                </div>
+            </div>
+        </div>
+        <!---PASO 5--->
+        <div class="row">
+            <div class="small-12 columns block_dos">
+                <div class="small-12 columns">
+                    <p class="questions"><b>5. </b>Como enviar nuestro repositorio local al servidor Github?</p>
+                </div>
+                <div class="small-11 columns">
+                    <span class="span_descrip">Debemos añadir nuestro repositorio remoto, ejecutando lo siguiente: </span>
+                    <pre>git remote add origin https://github.com/thekarito/git_kari.git  <span class="pre_descrip">//Recuerde ubicarse en la linea <b> git remote add origin https: ....</b>, proporcionada por la guía de configuración de su repositorio en Github</span></pre>
+                </div>
+            </div>
+        </div>
+        <!---PASO 6--->
+        <div class="row">
+            <div class="small-12 columns block_dos">
+                <div class="small-12 columns">
+                    <p class="questions"><b>6. </b>Finalmente, como empujar o subir nuestros cambios locales a nuestro repositorio remoto Github?</p>
+                </div>
+                <div class="small-11 columns">
+                    <span class="span_descrip">Para subir los cambios, ejecuta lo siguiente: </span>
+                    <pre>git push -u origin master  <span class="pre_descrip">//Tengamos en cuenta que nuestro repositorio remoto es <b>origin</b> y el nombre de referencia a nuestro repositorio local predeterminada es <b>master</b></span></pre><br/>
+                    <span class="span_descrip">No olvide indicar el usuario y contraseña de su cuenta de Github, para que la operación sea exitosa</span>
+                </div>
+            </div>
+        </div>
+        <!---TUTORIAL RECOMENDADO--->
+        <div class="row block_tres">
+            <div class="small-12 columns">
+                <div class="small-12 columns">
+                    <p class="thanks">Ahora si, podemos decir que hemos creado nuestro primer repositorio <b>Github </b> :-)</p>
+                </div>
+            </div>
+        </div>
+        <div class="row block_tres">
+            <div class="small-12 columns">
+                <div class="small-6 medium-3 large-3 columns text-right"><img src="statics/img/inspectocat.jpg" alt="investiga" align="middle"></div>
+                <div class="small-6 medium-9 large-9 columns margin-top">
+                    <span class="span_descrip"> <b>Para conocer mucho más sobre la versatilidad y sencillez de Git</b>, te dejo el siguiente enlace, donde podrás observar más detalles sobre los comandos aqui usados, asi como el uso y utilidad de otros más avanzados</span>
+                    <a href="https://try.github.io/levels/1/challenges/1">Git Tutorial</a>
+                </div>
+            </div>
+        </div>
+        <!-----PIE DE PAGINA----->
+        <div class="row footer_git">
+            <div class="hide-for-small-only margin_bottom_contact2"></div>
+            <div class="small-12 columns text-center">
+                <p class="text_footer"><span class="fa fa-copyright"></span> Derechos Reservados Karina Torres, 2016 <?php echo gmdate("Y");?></p>
             </div>
         </div>
     </div>
 </body>
+<script src="statics/js/jquery-2.1.0.min.js"></script>
+<script src="statics/js/foundation.min.js"></script>
+<script type="text/javascript">
+    $(document).foundation();
+</script>
 </html>

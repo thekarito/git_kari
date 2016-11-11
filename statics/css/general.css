@@ -10,8 +10,13 @@
     font-weight: 300;
     src:  url(fonts/PetitFormalScript.woff2) format('woff2');
 }
+#cuerpo_git{
+    border-left: 10px solid #1E75B3;
+    border-right: 10px solid #1E75B3;
+}
 .block_uno{
-    padding-top: 10px !important;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 #titul_p {
     color:#1E75B3;
@@ -36,11 +41,16 @@
 }
 
 .block_dos{
-    padding-top: 50px;
+    padding-top: 10px;
     font-family: Helvetica, serif;
+    border-bottom: 1px dashed #ffffff;
+    padding-bottom: 20px;
+}
+.block_dos:hover{
+    border-bottom: 1px dashed #dadada;
 }
 .questions b{
-    font-size: 24px;
+    font-size: 28px;
     color: #cc1b69;
     opacity: 0.5;
 }
@@ -51,6 +61,34 @@
 .descrip, .span_descrip{ color: #585858 !important;}
 .clave_text{ color: #cc1b69;}
 .pre_descrip{ font-size: 12px !important; color: #cc1b69;}
+
+.block_tres{
+    padding-top: 50px;
+}
+.thanks{
+    color: #cc1b69;
+    font-family: Helvetica, serif;
+    font-size: 18px;
+}
+.thanks b{
+    color: #1E75B3;
+    font-family: petit, serif;
+    font-size: 20px;
+}
+.margin-top{
+    margin-top: 5%;
+}
+
+.footer_git{
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 1px dashed #dadada;
+}
+.text_footer{
+    font-size: 12px !important;
+    color: #999;
+    font-family: Helvetica, serif;
+}
 
 
 
