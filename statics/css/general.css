@@ -1,0 +1,55 @@
+@font-face {
+    font-family: open;
+    font-style: normal;
+    font-weight: 300;
+    src:  url(fonts/open.woff2) format('woff2');
+}
+@font-face {
+    font-family: petit;
+    font-style: normal;
+    font-weight: 300;
+    src:  url(fonts/PetitFormalScript.woff2) format('woff2');
+}
+.block_uno{
+    padding-top: 10px !important;
+}
+#titul_p {
+    color:#1E75B3;
+    font-weight: normal;
+    font-family: petit, serif;
+    font-size: 42px;
+}
+#titul_p b{
+    font-size: 45px;
+    color: #999 !important;
+}
+ #titul_p b{
+     -webkit-animation: text_bold 5s infinite alternate;
+     animation: text_bold 5s infinite alternate;
+ }
+@-webkit-keyframes text_bold { from { color: #cc1b69;} to{ color:#1E75B3;} }
+@keyframes text_bold { from { color: #cc1b69;} to{ color:#1E75B3;} }
+
+#subt_p{
+    color:#999;
+    font-family: Helvetica, serif;
+}
+
+.block_dos{
+    padding-top: 50px;
+    font-family: Helvetica, serif;
+}
+.questions b{
+    font-size: 24px;
+    color: #cc1b69;
+    opacity: 0.5;
+}
+.questions{
+    color:#1E75B3;
+    font-size: 20px;
+}
+.descrip, .span_descrip{ color: #585858 !important;}
+.clave_text{ color: #cc1b69;}
+
+
+
